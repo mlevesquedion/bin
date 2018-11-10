@@ -10,7 +10,7 @@ available time units are 's', 'm' and 'h', 's' is default
 
 try:
     text = sys.argv[1]
-    after = int(sys.argv[2])
+    seconds = int(sys.argv[2])
 except IndexError:
     input(usage)
     sys.exit(0)
@@ -20,17 +20,19 @@ except IndexError:
     unit = 's'
 
 if unit == 'm':
-    after *= 60
+    seconds *= 60
 elif unit == 'h':
-    after *= 3600
+    seconds *= 3600
 
-for _ in range(after):
+for _ in range(seconds):
     time.sleep(1)
+
 
 pygame.init()
 display_info = pygame.display.Info()
 W, H = display_info.current_w, display_info.current_h
 DISPLAY = pygame.display.set_mode((W, H), pygame.FULLSCREEN)
+
 
 BLACK = (0, 0, 0)
 WHITE = (255, 255, 255)
