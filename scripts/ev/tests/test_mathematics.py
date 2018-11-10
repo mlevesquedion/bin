@@ -1,5 +1,5 @@
 from pytest import mark
-from mathematics import floor_root, is_prime
+from ..mathematics import floor_root, is_prime
 
 
 @mark.parametrize(

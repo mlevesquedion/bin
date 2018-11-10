@@ -1,3 +1,3 @@
 @echo off
 cd C:\bin
-python ./gt.py %*
+python ./scripts/gt/gt.py %*

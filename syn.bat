@@ -1,3 +1,3 @@
 @echo off
 cd C:\bin
-python ./syn.py %*
+python ./scripts/syn/syn.py %*

@@ -1,3 +1,3 @@
 @echo off
 cd C:\bin
-python ./goog.py %*
+python ./scripts/goog/goog.py %*

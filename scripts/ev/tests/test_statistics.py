@@ -1,5 +1,5 @@
 from pytest import approx
-from statistics import weibull
+from ..statistics import weibull
 
 
 def test_weibull():
